@@ -84,7 +84,7 @@ async function getGeminiAnswer(userText) {
     return "Text not loaded yet, please wait...";
   }
 
-  const API_KEY = "AQ.Ab8RN6KIQzOgKXzu8UBxXogyfWcJneGoRW7gULq4srLMlnVDsg";
+  const API_KEY = "AQ.Ab8RN6K3f01N7TN30ZdsRZX8T9hl6NoR1VU3JDH-A-Vrkeok7w";
 
   const url =
     "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" +
@@ -95,11 +95,11 @@ async function getGeminiAnswer(userText) {
 
 إذا كان السؤال دينيًا أو إسلاميًا ووجدت الإجابة داخل هذا الملف، أجب منها مباشرة.
 
-إذا كان السؤال دينيًا أو إسلاميًا ولم توجد الإجابة داخل هذا الملف، اكتب فقط:
-
-"لم أجد إجابة، سيتم تسجيل الإجابات قريبًا."
+إذا كان السؤال دينيًا أو إسلاميًا ولم توجد الإجابة داخل هذا الملف، أخبر المستخدم بأن الإجابة غير موجودة في الملف وسيتم إضافة المزيد من الإجابات قريبًا، بنفس لغة المستخدم.
 
 إذا كان السؤال غير ديني، يمكن استخدام المعرفة العامة للإجابة.
+
+يجب الرد دائمًا بنفس لغة المستخدم، ولا تلتزم بلغة واحدة. إذا كتب المستخدم بالعربية فاردد بالعربية، وإذا كتب بالإنجليزية فاردد بالإنجليزية، وأي لغة أخرى استخدمها في الرد.
 
 ---
 
